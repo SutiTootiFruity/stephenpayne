@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rajdhani:wght@500&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&family=Rampart+One&display=swap');
+    </style>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Stephen Payne::Portfolio</title>
+</head>
+
+<body id="about">
+    <div id="mainContainer">
+        <header>
+            <a href="about.html">
+                <h1 id="name">Stephen Payne</h1>
+            </a>
+            <h2 id="japName">ペイン・スティーブン</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <main id="main-content">
+            <div id="portGrid">
+                <section class="portCard" id="proj1" data-aos="fade-down" data-aos-easing="ease-in-out"
+                    data-aos-duration="800" data-aos-delay="50">
+                    <img src="imgs/gamer_haven.png">
+                    <div>
+                        <h3>Gamer Haven</h3>
+                        <p>
+                            Final project for Intro to Web Design SP2017 at IUPUI. Took at the course as a junior in
+                            high school</p>
+                    </div>
+
+                </section>
+                <section class="portCard" id="proj2" data-aos="fade-left" data-aos-easing="ease-in-out"
+                    data-aos-duration="800" data-aos-delay="50">
+                    <img src="imgs/raytracer.png">
+                    <div>
+                        <h3>Raytracer</h3>
+                        <p>
+                            A single point ray-tracer with reflection and shadow calculation. Final project for CSSE 351
+                            Computer Graphics</p>
+                    </div>
+
+                </section>
+                <section class="portCard" id="proj3" data-aos="fade-right" data-aos-easing="ease-in-out"
+                    data-aos-duration="800" data-aos-delay="50">
+                    <img src="imgs/backgammon.png">
+                    <div>
+                        <h3>3D Backgammon</h3>
+                        <p>
+                            3D Backgammon rendered using OpenGL. Makes use of 3D projection and user interaction.
+                            Background color changes to indicate whose turn it currently is.</p>
+                    </div>
+                </section>
+                <section class="portCard" id="proj4" data-aos="fade-up" data-aos-easing="ease-in-out"
+                    data-aos-duration="800" data-aos-delay="50">
+                    <img src="imgs/jisho.jpg">
+                    <div>
+                        <h3>JishoScraper</h3>
+                        <p>
+                            Vastly improve the creation time of Japanese Anki flashcards. Scrapes <a
+                                href="https://jisho.org">Jisho.org</a>
+                            to an Anki-importable CSV file. Personal project </p>
+                    </div>
+                </section>
+
+            </div>
+            <div>
+                <button id="favProj">Favorite Projects</button>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

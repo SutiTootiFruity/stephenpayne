@@ -1,0 +1,353 @@
+/* body#about #myPic {
+    height: 15em;
+}
+
+body#portfolio #myPic {
+    height: 30em;
+} */
+
+body {
+    padding-left: 2em;
+    font-size: 18px;
+    line-height: 1.5;
+    /* display: grid; */
+    /* grid-template-areas: "head head" "nav main" "foot foot"; */
+    /* grid-template-columns: 20em 1fr; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 106, 148);
+    color: black;
+}
+
+header {
+    /* font-family: 'Fjalla One', sans-serif; */
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 6em 0;
+    background-color: rgb(0, 124, 196);
+    color: white;
+    /* background-image: url("imgs/kanji.jpg"); */
+}
+
+header > a {
+    text-decoration: none;
+}
+
+header > a:visited {
+    color: white;
+}
+#name {
+    margin: 0;
+}
+
+#favProj {
+    margin-bottom: 2em;
+    color: blue;
+    background-color: transparent;
+    border-radius: 15px;
+    font-size: 1.5em;
+}
+
+#favProj:hover {
+    cursor:pointer;
+}
+
+#favDiv {
+    text-align: center;
+}
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+}
+
+#japName {
+    margin-top: 0px;
+    font-size: 0.5em;
+}
+
+#mainContainer {
+    width: 80%;
+    margin: auto;
+    background-color: cornsilk;
+    /* display: grid;
+    grid-template-rows: 10% auto 70%;
+    grid-area: "head" "nav" "main"; */
+    text-align: center;
+}
+
+main {
+    /* color: aliceblue; */
+    /* grid-area: main; */
+    background-color: white;
+    padding-top: 3em;
+}
+
+p {
+    text-align: left;
+    /* padding-left: 3em; */
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    color: black;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 2em;
+}
+
+body>nav ul {
+    list-style-type: none;
+}
+
+body>nav ul li {
+    /* display: inline; */
+    padding: 0px 2em;
+}
+
+/* body>main {
+    grid-area: main; */
+
+/* background-color: purple; */
+
+/* padding-left: 2em;
+    padding-top: 2em;
+} */
+
+body>footer {
+    /* grid-area: foot; */
+    /* background-color: red; */
+}
+
+#namesHeader h1, #namesHeader h2 {
+    display: inline
+}
+
+#myName {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 3em;
+    line-height: normal;
+}
+
+#jap {
+    font-family: 'Rampart One', cursive;
+    line-height: normal;
+}
+
+/* @media screen and (max-width: 21em) {
+    body {
+        grid-template-areas: "head head" "nav  nav" "main main" "foot foot";
+        grid-template-columns: 25em 1fr;
+    }
+} */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.sldCard {
+    margin: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 40% auto;
+    overflow: auto;
+    padding: 1em;
+    /* background-color: rgba(16, 165, 235, 0.596); */
+    grid-gap: 1em;
+    margin-bottom: 2em;
+    border: 2px solid rgb(3, 131, 190);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.portCard {
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-rows: 25% auto auto;
+    grid-template-columns: 40% auto;
+    grid-template: "title title" "pic expl" "pic expl";
+    overflow: auto;
+    padding: 1em;
+    /* background-color: rgba(16, 165, 235, 0.596); */
+    grid-gap: 1em;
+    align-items: center;
+    margin-bottom: 2em;
+    border: 2px solid rgb(3, 131, 190);
+    background-color: rgb(124, 190, 245);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.portCard h3 {
+    background-color: aliceblue;
+    grid-area: title;
+    /* justify: center; */
+}
+
+.sldCard>img {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+.portCard>img {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+    grid-area: pic;
+}
+
+.portCard div {
+    grid-area: expl;
+}
+#firstCard {
+    grid-template-columns: 60% auto;
+    /* display: flex; */
+    align-items: center;
+    width: 90%;
+    background-color: rgba(16, 166, 235, 0.425);
+}
+
+#firstCard img {
+    background-color: black;
+}
+
+.sldCard:nth-child(even) img {
+    order: 2;
+}
+
+/* #firstCard img {
+    width: 70%;
+    height: 100%;
+} */
+
+/* #firstCard div {
+    float: right;
+} */
+
+#programming-languages {
+    width: 100%;
+    overflow: auto;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+#langPics {
+    /* display: flex; */
+    overflow: auto;
+    width: 99%;
+    background-color: aliceblue;
+    margin: auto;
+    /* border: 2px dotted blue; */
+}
+
+#portGrid {
+    display: grid;
+    grid-template: "proj1 proj2" "proj3 proj4";
+    width: 80%;
+    margin: auto;
+}
+
+#proj1{
+    grid-area: proj1;
+}
+#proj2{
+    grid-area: proj2;
+}
+#proj3{
+    grid-area: proj3;
+}
+#proj4{
+    grid-area: proj4;
+}
+#langPics img {
+    flex-basis: fit-content;
+    flex-wrap: wrap;
+    width: 10%;
+    margin: 1em 2em;
+}
+
+.project figure {
+    width: 21em;
+    height: 90%;
+}
+
+.project figure img {
+    /* width: 21em; */
+
+    display: block;
+    height: 90%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+    /* position: relative; */
+    /* display: inline-block; */
+}
+
+figcaption {
+    margin-top: 1em;
+}
+.project img:hover {
+    opacity: 0.5;
+    transition: opacity .5s ease, visibility .5s;
+}
+
+#langPics img:hover {
+    animation: scaleUp 0.5s ease-in-out;
+}
+
+.project a {
+    position: relative;
+}
+h4 {
+    padding-left: 2em;
+    text-align: left;
+    color: rgba(5, 122, 177, 0.801);;
+    /* text-indent: 2em; */
+}
+
+section > ul {
+    text-align: left;
+}
+
+.project .picHover {
+    position: absolute;
+    text-align: center;
+    /* left: 35%; */
+    /* bottom: %; */
+}
+/* #programming-languages li{
+    display: inline;
+} */
+
+@media screen and (max-width: 1000px) {
+    .sldCard {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        padding: 0%;
+    }
+    nav ul {
+        padding: 0;
+    }
+    .portCard {
+        display: block;
+    }
+    #portGrid {
+        grid-template: "proj1" "proj2" "proj3" "proj4";
+        flex-direction: column;
+    }
+}
+
+/* #japDot{
+    background-color: red;
+} */
